@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterLength
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return an [iterator][mdn-iterator-protocol]'s length.
 
@@ -129,7 +129,7 @@ var len = iterLength( iter );
 
 ## See Also
 
--   [`@stdlib/iter/counter`][@stdlib/iter/counter]: create an iterator which iteratively returns the number of iterated values.
+-   <span class="package-name">[`@stdlib/iter/counter`][@stdlib/iter/counter]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively returns the number of iterated values.</span>
 
 </section>
 
@@ -180,8 +180,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-length/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-length?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/iter-length.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/iter-length/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
