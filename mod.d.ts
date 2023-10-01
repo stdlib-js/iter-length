@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,19 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-var randu = require( '@stdlib/random-iter-randu' );
-var iterLength = require( './../lib' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-// Create an iterator which generates uniformly distributed pseudorandom numbers:
-var opts = {
-	'iter': 100
-};
-var iter = randu( opts );
+import { Iterator } from '@stdlib/types/iter';
 
-// Determine the iterator length:
-var len = iterLength( iter );
-// returns 100
+/**
+* Consumes an entire iterator and returns the number of iterated values (i.e., the iterator length).
+*
+* @param iterator - input iterator
+* @returns iterator length
+*
+* @example
+* var array2iterator = require( `@stdlib/array/to-iterator` );
+*
+* var it = array2iterator( [ 0, 0, 0, 0, 1 ] );
+*
+* var v = iterLength( it );
+* // returns 5
+*/
+declare function iterLength( iterator: Iterator ): number;
 
-console.log( len );
+
+// EXPORTS //
+
+export = iterLength;
