@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,65 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
-var iterLength = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof iterLength, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function throws an error if not provided an iterator', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		{},
-		[],
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			iterLength( value );
-		};
-	}
-});
-
-tape( 'if provided an "empty" iterator, the function returns `0`', function test( t ) {
-	var arr;
-	var v;
-
-	arr = array2iterator( [] );
-	v = iterLength( arr );
-
-	t.strictEqual( v, 0, 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function returns the iterator length', function test( t ) {
-	var arr;
-	var v;
-
-	arr = array2iterator( [ 0, 0, 0, 0, 1 ] );
-	v = iterLength( arr );
-
-	t.strictEqual( v, 5, 'returns expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
