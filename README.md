@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@deno/mod.js';
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.0-deno/mod.js';
 ```
 
 #### iterLength( iterator )
@@ -99,7 +99,7 @@ var len = iterLength( iterEmpty() );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@deno/mod.js';
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.0-deno/mod.js';
 
 // Create an iterator which generates uniformly distributed pseudorandom numbers:
 var opts = {
