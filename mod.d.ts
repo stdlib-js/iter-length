@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,22 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isIteratorLike = require( '@stdlib/assert-is-iterator-like' );
-var format = require( '@stdlib/string-format' );
-
-
-// MAIN //
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Consumes an iterator and returns the number of iterated values (i.e., the iterator length).
+* Consumes an entire iterator and returns the number of iterated values (i.e., the iterator length).
 *
-* @param {Iterator} iterator - input iterator
-* @throws {TypeError} must provide an iterator
-* @returns {NonNegativeInteger} iterator length
+* @param iterator - input iterator
+* @returns iterator length
 *
 * @example
 * var array2iterator = require( '@stdlib/array-to-iterator' );
@@ -41,23 +36,9 @@ var format = require( '@stdlib/string-format' );
 * var v = iterLength( it );
 * // returns 5
 */
-function iterLength( iterator ) {
-	var count;
-	var v;
-	if ( !isIteratorLike( iterator ) ) {
-		throw new TypeError( format( 'invalid argument. Must provide an iterator. Value: `%s`.', iterator ) );
-	}
-	count = 0;
-	while ( true ) {
-		v = iterator.next();
-		if ( v.done ) {
-			return count;
-		}
-		count += 1;
-	}
-}
+declare function iterLength( iterator: Iterator ): number;
 
 
 // EXPORTS //
 
-module.exports = iterLength;
+export = iterLength;
