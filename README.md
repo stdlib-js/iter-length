@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+iterLength = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-length/tags). For example,
+
+```javascript
 iterLength = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.1-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var iterLength = require( 'path/to/vendor/umd/iter-length/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -126,7 +131,7 @@ var len = iterLength( iterEmpty() );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
