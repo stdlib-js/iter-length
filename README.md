@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-length/tags). For example,
+
+```javascript
 import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.1-esm/index.mjs';
 ```
 
@@ -104,7 +109,7 @@ var len = iterLength( iterEmpty() );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.1-esm/index.mjs';
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@esm/index.mjs';
 
 // Create an iterator which generates uniformly distributed pseudorandom numbers:
 var opts = {
