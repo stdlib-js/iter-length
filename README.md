@@ -45,32 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-length
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterLength = require( '@stdlib/iter-length' );
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@deno/mod.js';
 ```
 
 #### iterLength( iterator )
@@ -78,7 +60,7 @@ var iterLength = require( '@stdlib/iter-length' );
 Consumes an entire [iterator][mdn-iterator-protocol] and returns the number of [iterated][mdn-iterator-protocol] values (i.e., the [iterator][mdn-iterator-protocol] length).
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
 
 var arr = array2iterator( [ 0, 0, 0, 0, 1 ] );
 
@@ -89,7 +71,7 @@ var len = iterLength( arr );
 If a provided [`iterator`][mdn-iterator-protocol] does not return any [iterated][mdn-iterator-protocol] values, the function returns `0`.
 
 ```javascript
-var iterEmpty = require( '@stdlib/iter-empty' );
+import iterEmpty from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-empty@deno/mod.js';
 
 var len = iterLength( iterEmpty() );
 // returns 0
@@ -116,8 +98,8 @@ var len = iterLength( iterEmpty() );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-iter-randu' );
-var iterLength = require( '@stdlib/iter-length' );
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@deno/mod.js';
 
 // Create an iterator which generates uniformly distributed pseudorandom numbers:
 var opts = {
@@ -165,7 +147,7 @@ var len = iterLength( iter );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -232,7 +214,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/counter]: https://github.com/stdlib-js/iter-counter
+[@stdlib/iter/counter]: https://github.com/stdlib-js/iter-counter/tree/deno
 
 <!-- </related-links> -->
 
