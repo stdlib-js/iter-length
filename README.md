@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-length/tags). For example,
+
+```javascript
 import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.2-deno/mod.js';
 ```
 
@@ -99,7 +104,7 @@ var len = iterLength( iterEmpty() );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@v0.2.2-deno/mod.js';
+import iterLength from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-length@deno/mod.js';
 
 // Create an iterator which generates uniformly distributed pseudorandom numbers:
 var opts = {
